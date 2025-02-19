@@ -12,7 +12,7 @@ const cryptoGrid = document.querySelector('.crypto-grid');
 // Fetch crypto data from CoinGecko API
 const fetchCryptoPrices = async () => {
   try {
-    const response = await fetch("https://crypto-backend-black.vercel.app/api/crypto");
+    const response = await fetch("https://my-web-backend-jd40.onrender.com/api/crypto");
     const data = await response.json();
     cryptoData = data.data; // Store the fetched data in cryptoData
     console.log('Fetched crypto prices:', cryptoData);
